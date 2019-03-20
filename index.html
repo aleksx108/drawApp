@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>DrawApp | Home</title>
+    <meta charset="utf-8">
+    <base href="/">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/hover.css">
+</head>
+<body>
+
+    <canvas id="drawCanvas" width="1200" height="600"></canvas>
+    <div id="toolsDiv" width="1200" height="100">
+        <div id="sizeDiv">
+            <p id="sizeDemo">0</p>
+            <input type="range" list="tickmarks" class="slider" id="size" value="1">
+            <datalist id="tickmarks">
+                <option value="1">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100">
+            </datalist>
+        </div>
+        <table id="colorScheme">
+            <tr>
+                <td>
+                    <input class="colorPick" id="red" type="button" name="brushColor" value="#FF5A5F" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="orange" type="button" name="brushColor" value="#FF7A59" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="yellow" type="button" name="brushColor" value="#FFDF82" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="pink" type="button" name="brushColor" value="#E3879E" onclick="clickMe(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="colorPick" id="green" type="button" name="brushColor" value="#52B788" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="blue" type="button" name="brushColor" value="#3F88C5" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="purple" type="button" name="brushColor" value="#996ed1" onclick="clickMe(this)">
+                </td>
+                <td>
+                    <input class="colorPick" id="black" type="button" name="brushColor" value="#393E41" onclick="clickMe(this)">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="./public/js/script.js"></script>
+</body>
+</html>
